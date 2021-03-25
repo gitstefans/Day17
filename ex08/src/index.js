@@ -46,7 +46,7 @@ function getUsers() {
 function findUser(lastName, gender) {
   try {
     // add appropriate code here
-    var user = _.find(users, { 'lastName': lastName, 'gender': gender });
+    var user = _.find(users, { lastName: lastName, gender: gender });
     //console.log(user);
     var iFindUser = `${user.firstName} ${user.lastName} is ${user.age}, ${user.gender}`;
     //console.log(iFindUser);
