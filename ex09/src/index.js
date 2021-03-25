@@ -46,7 +46,7 @@ function getUsers() {
 function findUserById(id) {
   try {
     // add appropriate code here
-    var user = _.find(users, { 'id': id });
+    var user = _.find(users, { id: id });
     var iFindUser = `${user.id} - ${user.firstName} ${user.lastName} is ${user.age}, ${user.gender}`;
   } catch (error) {
     return "Cannot read property 'id'"; // Change this line
